@@ -3,14 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Visit Lanzarote</title>
 
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://kit.fontawesome.com/719e215d4a.js" crossorigin="anonymous"></script>
-    
+
 </head>
 <body>
-    
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle">
+                <i id="hamburger" class="fa-solid fa-bars active"></i>
+                <i id="close" class="fa-solid fa-x"></i>
+            </div>
+            
+            
+        </header>
+
+        <video src="video (2160p).mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+        
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dicta consequuntur facere reiciendis eos fugiat qui explicabo recusandae sint sequi.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcaseToggle = document.querySelector('.showcase')
+        const hamburger = document.querySelector('#hamburger')
+        const close = document.querySelector('#close')
+
+        menuToggle.addEventListener('click', () => {
+            if (hamburger.classList.contains('active')) {
+                hamburger.classList.toggle('active')
+                close.classList.toggle('active')
+            }
+            else {
+                hamburger.classList.toggle('active')
+                close.classList.toggle('active')
+            }
+            showcaseToggle.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>
